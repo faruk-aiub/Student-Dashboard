@@ -1,0 +1,182 @@
+:root {
+  --bg-color: #e4ecf3;
+  --card-color: #ffffff;
+  --header-color: #e8f0ea;
+  --text-color: #222222;
+  --border-color: #dddddd;
+  --primary-color: #2563eb;
+  --button-bg: #ffffff;
+  --button-hover: #eef2ff;
+  --spacing: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--spacing);
+}
+
+
+.header {
+  background-color: var(--header-color);
+  color: black;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0 0 8px 0;
+  color: black;
+  font-size: 38px;
+}
+
+.header nav {
+  margin-bottom: 12px;
+  margin-top: 15px;
+}
+
+.header nav a {
+  margin-right: 12px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+
+.search-input {
+  display: block;
+  width: 260px;
+  padding: 9px;
+  margin: 0 auto 12px auto;
+  border: 1px solid var(--border-color);
+  background-color: white;
+  color: black;
+  font-size: 14px;
+}
+
+
+.sort-controls {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.sort-controls button {
+  padding: 8px 14px;
+  margin: 4px;
+  border: 1px solid var(--border-color);
+  background-color: var(--button-bg);
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sort-controls button:hover {
+  background-color: var(--button-hover);
+}
+
+
+.student-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.student-card {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  width: 230px;
+  text-align: center;
+  color: black;
+}
+
+.student-card h3 {
+  margin: 0 0 10px 0;
+  color: black;
+}
+
+.student-card p {
+  margin: 6px 0;
+  color: black;
+}
+
+
+.student-card button {
+  padding: 8px 12px;
+  margin: 10px 0;
+  border: 1px solid var(--border-color);
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.student-card button:hover {
+  background-color: var(--button-hover);
+}
+
+
+.course-list {
+  margin-top: 12px;
+}
+
+.course-tag {
+  display: inline-block;
+  padding: 5px 9px;
+  margin: 4px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: black;
+}
+
+
+.stat-badge {
+  margin-top: 8px;
+  font-size: 14px;
+  color: black;
+}
+
+
+.loading {
+  padding: 30px;
+  text-align: center;
+  font-size: 22px;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing);
+}
+
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.student-card {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
