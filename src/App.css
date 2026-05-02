@@ -1,0 +1,87 @@
+:root {
+  --bg-color: #e7eff8;
+  --card-color: #ffffff;
+  --header-color: #e8f0ea;
+  --text-color: #222222;
+  --border-color: #dddddd;
+  --primary-color: #2563eb;
+  --spacing: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app {
+  padding: var(--spacing);
+}
+
+.header {
+  background-color: var(--header-color);
+  color: black;
+  padding: var(--spacing);
+  border: 1px solid var(--border-color);
+  margin-bottom: var(--spacing);
+}
+
+.header h1 {
+  margin: 0 0 10px 0;
+  color: black;
+}
+
+.header nav {
+  margin-bottom: 10px;
+  margin-top: 22px;
+}
+
+.header nav a {
+  margin-right: 15px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+
+.student-list {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+
+.student-card {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  padding: var(--spacing);
+  width: 220px;
+}
+
+.student-card h3 {
+  margin: 10px 0 6px 0;
+}
+
+.student-card p {
+  margin: 6px 0;
+}
+
+
+.course-list {
+  margin-top: 10px;
+}
+
+.course-tag {
+  display: inline-block;
+  padding: 5px 8px;
+  margin: 4px 4px 4px 0;
+  border-radius: 12px;
+  font-size: 13px;
+  color: black;
+}
+
+
+.stat-badge {
+  margin-top: 8px;
+  font-size: 14px;
+}

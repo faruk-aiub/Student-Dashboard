@@ -1,0 +1,36 @@
+import PropTypes from "prop-types";
+import CourseTag from "./CourseTag";
+import StatBadge from "./StatBadge";
+
+function StudentCard({ name, id, gpa, major, courses }) {
+  return (
+    <div className="student-card">
+
+      <h3>{name}</h3>
+      <p>ID: {id}</p>
+      <p>Major: {major}</p>
+
+      <StatBadge label="GPA" value={gpa} />
+
+      <div className="course-list">
+        {courses.map((course, index) => (
+          <CourseTag
+         key={index}
+         courseName={course}
+        color="#dbeafe"
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+StudentCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  gpa: PropTypes.number.isRequired,
+  major: PropTypes.string.isRequired,
+  courses: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
+export default StudentCard;
